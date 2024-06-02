@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='style.css'>
+        <link rel='icon' href="https://cdn.iconscout.com/icon/free/png-256/free-code-280-460136.png?f=webp" type="image/x-icon">
+        <title>Code Editor</title>
+    </head>
+<body>
+    <div class="heading">
+        <p>Code Editor</p>
+        <button id="button"><i class="fa-solid fa-moon"></i></button>
+    </div>
+    <div class="main">
+        <div class="code">
+            <div class="select">
+                <button id="html_btn">HTML</button>
+                <button id="css_btn">CSS</button>
+                <button id="js_btn">Javascript</button>
+                <div class="zoom">
+                    <i class="fa-solid fa-magnifying-glass-plus zoom_in"></i>
+                    <i class="fa-solid fa-magnifying-glass-minus zoom_out"></i>
+                </div>
+            </div>
+            <div>
+                <textarea placeholder="Write Javascript Code" id="js" class=""></textarea>
+                <textarea placeholder="Write CSS Code" id="css" class=""></textarea>
+                <textarea placeholder="Write HTML Code" id="html" class=""></textarea>
+            </div>
+            <div class="options">
+                <button id="clear">Clear</button>
+                <button id="execute">Execute</button>
+            </div>
+        </div>
+        <iframe id="iframe"></iframe>
+    </div>
+    <script src='script.js'></script>
+    <script src="https://kit.fontawesome.com/22905693d1.js" crossorigin="anonymous"></script>
+</body>
+</html>
